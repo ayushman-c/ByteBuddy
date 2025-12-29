@@ -3,6 +3,7 @@ import { AuthProvider, useAuth } from './context/AuthContext';
 import LandingPage from './components/LandingPage';
 import Dashboard from './pages/Dashboard';
 import { signInWithGoogle, logOut } from './services/firebase';
+import './App.css';
 
 function AppContent() {
   const { user, loading } = useAuth();
@@ -26,14 +27,8 @@ function AppContent() {
 
   if (loading) {
     return (
-      <div style={{
-        minHeight: '100vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
-      }}>
-        <div style={{ color: 'white', fontSize: '1.5rem' }}>Loading ByteBuddy...</div>
+      <div className="app-loading">
+        <div className="app-loading-text">Loading ByteBuddy...</div>
       </div>
     );
   }

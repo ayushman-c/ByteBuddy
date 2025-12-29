@@ -1,0 +1,109 @@
+.gig-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: 1px solid #e0e0e0;
+  position: relative;
+}
+
+.gig-card:hover {
+  transform: translateY(-5px);
+}
+
+.gig-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 15px;
+}
+
+.gig-card-title-section {
+  flex: 1;
+}
+
+.gig-card-title {
+  font-size: 1.3rem;
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.gig-card-author {
+  color: #999;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.gig-card-category {
+  background: #667eea;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.gig-card-description {
+  color: #666;
+  margin: 0 0 15px 0;
+  line-height: 1.5;
+  min-height: 60px;
+}
+
+.gig-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.gig-card-rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.gig-card-rating-text {
+  font-weight: bold;
+  color: #333;
+}
+
+.gig-card-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.gig-card-button {
+  width: 100%;
+  margin-top: 15px;
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.gig-card-button:hover {
+  background: #5568d3;
+}
+
+.gig-card-button-delete {
+  background: #dc3545;
+}
+
+.gig-card-button-delete:hover {
+  background: #c82333;
+}
+
