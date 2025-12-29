@@ -29,8 +29,8 @@ This document explains how to set up the environment variables for ByteBuddy.
 3. Fill in the required values:
 
 ### Required Variables:
-- `VITE_API_URL`: Backend API URL (default: `http://localhost:5000/api`)
-- `VITE_SOCKET_URL`: Socket.io server URL (default: `http://localhost:5000`)
+- `VITE_API_URL`: Backend API URL (default: `https://bytebuddy-9fg5.onrender.com/api`)
+- `VITE_SOCKET_URL`: Socket.io server URL (default: `https://bytebuddy-9fg5.onrender.com`)
 - `VITE_FIREBASE_API_KEY`: Firebase web API key
 - `VITE_FIREBASE_AUTH_DOMAIN`: Firebase auth domain (usually `your-project-id.firebaseapp.com`)
 - `VITE_FIREBASE_PROJECT_ID`: Firebase project ID
@@ -59,6 +59,8 @@ This document explains how to set up the environment variables for ByteBuddy.
 
 - Never commit `.env` files to git (they're in `.gitignore`)
 - The `.env.example` files serve as templates
-- Make sure your MongoDB is running before starting the backend
-- The backend defaults to port 5000, frontend (Vite) defaults to port 5173
+- **Production Backend URL**: `https://bytebuddy-9fg5.onrender.com`
+- For local development, update `VITE_API_URL` and `VITE_SOCKET_URL` to `http://localhost:5000/api` and `http://localhost:5000` respectively
+- Make sure your MongoDB is running before starting the backend locally
+- The backend defaults to port 5000 locally, frontend (Vite) defaults to port 5173
 
