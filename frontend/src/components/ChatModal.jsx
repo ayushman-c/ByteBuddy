@@ -14,7 +14,7 @@ const ChatModal = ({ gig, user, onClose }) => {
   };
 
   useEffect(() => {
-    const socketUrl = import.meta.env.VITE_SOCKET_URL || 'https://bytebuddy-9fg5.onrender.com';
+    const socketUrl = import.meta.env.VITE_SOCKET_URL || 'https://bytebuddy-backend-ejyc.onrender.com';
     const newSocket = io(socketUrl);
     socketRef.current = newSocket;
 
