@@ -1,0 +1,179 @@
+.cats-container{
+    margin-top: 2.6042vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.6042vw;
+    gap: 1.917vw;
+}
+
+.cats-card-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 208px;
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6vw;
+}
+.cats-pic-1{
+    height: 56px;
+    width: 56px;
+    background: url(../assets/cats-1.png);
+    background-size: cover;
+}
+.cats-card-2{
+    height: 208px;
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6vw;
+}
+.cats-pic-2{
+    height: 56px;
+    width: 56px;
+    background: url(../assets/cats-2.png);
+    background-size: cover;
+}
+.cats-card-3{
+    height: 208px;
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6vw;
+}
+.cats-pic-3{
+    height: 56px;
+    width: 56px;
+    background: url(../assets/cats-3.png);
+    background-size: cover;
+}
+.cats-card-4{
+    height: 208px;
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6vw;
+}
+.cats-pic-4{
+    height: 56px;
+    width: 56px;
+    background: url(../assets/cats-4.png);
+    background-size: cover;
+}
+.cats-card-5{
+    height: 208px;
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6vw;
+}
+.cats-pic-5{
+    height: 56px;
+    width: 56px;
+    background: url(../assets/cats-5.png);
+    background-size: cover;
+}
+.cats-card-6{
+    height: 208px;
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6vw;
+}
+.cats-pic-6{
+    height: 56px;
+    width: 56px;
+    background: url(../assets/cats-6.png);
+    background-size: cover;
+}
+.cats-heading-l{
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+.cats-desc{
+    font-size: 0.9292vw;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.1458vw;
+}
+.cats-sub-desc{
+    color: green;
+}
+.cats-container-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cats-container-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:765px){
+    
+.cats-container{
+        gap: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .cats-container-1,
+    .cats-container-2{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    /* Make cards smaller for mobile */
+    .cats-card-1,
+    .cats-card-2,
+    .cats-card-3,
+    .cats-card-4,
+    .cats-card-5,
+    .cats-card-6{
+        width: 280px;
+        height: 180px;
+        gap: 0.5rem;
+        scale: 1.2;
+    }
+    
+    /* Adjust icon size for mobile */
+    .cats-pic-1,
+    .cats-pic-2,
+    .cats-pic-3,
+    .cats-pic-4,
+    .cats-pic-5,
+    .cats-pic-6{
+        height: 48px;
+        width: 48px;
+    }
+    
+    /* Make text sizes fixed instead of viewport-based */
+    .cats-heading-l{
+        font-size: 18px;
+    }
+    
+    .cats-desc{
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+    .cats-sub-desc{
+        font-size: 13px;
+    }
+}
+
+

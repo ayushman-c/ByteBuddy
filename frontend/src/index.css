@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding: 75px;
 }
 
 body {
@@ -11,6 +13,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: aliceblue;
+}
+
+a {
+  color: inherit; /* Uses parent element's color */
+  text-decoration: none; /* Removes underline */
 }
 
 code {

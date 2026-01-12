@@ -1,0 +1,133 @@
+.working-cards-container{
+    margin-top: 2.6042vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.6042vw;
+    gap: 2.9417vw;
+
+}
+.working-cards-container > * {
+    background-color: rgb(255, 255, 255);
+    scale: 1.1;
+}
+
+.working-card-1{
+    height: 10.4167vw;
+    width: 15.1042vw;
+    padding: 0.4167vw 0.8333vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.7813vw;
+    gap: 0.2604vw;
+    
+}
+.card-1-pic{
+    background: url(../assets/working-1.png);
+    height: 2.5vw;
+    width: 2.5vw;
+    background-size: cover;
+}
+.working-card-2{
+    width: 15.1042vw;
+    height: 10.4167vw;
+    padding: 0.4167vw 0.8333vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.7813vw;
+    gap: 0.2604vw;
+}
+.card-2-pic{
+    background: url(../assets/working-2.png);
+    height: 2.5vw;
+    width: 2.5vw;
+    background-size: cover;
+}
+.working-card-3{
+    width: 15.1042vw;
+    height: 10.4167vw;
+    padding: 0.4167vw 0.8333vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.7813vw;
+    gap: 0.2604vw;
+}
+.card-3-pic{
+    background: url(../assets/working-3.png);
+    height: 2.5vw;
+    width: 2.5vw;
+    background-size: cover;
+}
+.working-card-4{
+    height: 10.4167vw;
+    width: 15.1042vw;
+    padding: 0.4167vw 0.8333vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.7813vw;
+    gap: 0.2604vw;
+}
+.card-4-pic{
+    background: url(../assets/working-4.png);
+    height: 2.5vw;
+    width: 2.5vw;
+    background-size: cover;
+}
+.card-heading{
+    font-size: 0.9375vw;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+.card-desc{
+    font-size: 0.7292vw;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.1458vw;
+}
+
+@media (max-width:765px){
+    .working-cards-container{
+        flex-wrap: wrap;
+        gap: 4vw;
+        margin-top: 8vw;
+        margin-bottom: 8vw;
+        padding: 0 4vw;
+    }
+    
+    .working-cards-container > * {
+        scale: 1;
+    }
+    
+    .working-card-1,
+    .working-card-2,
+    .working-card-3,
+    .working-card-4{
+        width: 42vw;
+        height: 50vw;
+        min-height: 35vw;
+        padding: 3vw 2vw;
+        border-radius: 3vw;
+        gap: 2vw;
+    }
+    .working-card-3,
+    .working-card-4{
+        height: auto;
+    }
+    
+    .card-1-pic,
+    .card-2-pic,
+    .card-3-pic,
+    .card-4-pic{
+        height: 8vw;
+        width: 8vw;
+    }
+    
+    .card-heading{
+        font-size: 3.5vw;
+    }
+    
+    .card-desc{
+        font-size: 2.8vw;
+        line-height: 4vw;
+    }
+}

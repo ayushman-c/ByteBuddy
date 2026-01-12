@@ -1,0 +1,230 @@
+.navbar-main-container {
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar-container {
+    height: 3.8vw;
+    display: flex;
+    background-color: white;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7vw;
+    width: 40.2vw;
+}
+
+.logo {
+    height: 2.8vw;
+    width: 2.8vw;
+    background-color: bisque;
+    border-radius: 50%;
+}
+
+.heading {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.1vw;
+    line-height: 1.7vw;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.buttons {
+    display: flex;
+    gap: 1.2vw;
+    width: 33.2vw;
+    color: #737B8C;
+    font-size: 0.9vw;
+    font-weight: 500;
+}
+
+.explore-gigs {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.explore-gigs:hover {
+    transform: scale(1.05);
+    color: #109379;
+}
+
+.features {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.features:hover {
+    transform: scale(1.05);
+    color: #109379;
+}
+
+.working {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.working:hover {
+    transform: scale(1.05);
+    color: #109379;
+}
+
+.catagoriers {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.catagoriers:hover {
+    transform: scale(1.05);
+    color: #109379;
+}
+
+.interaction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.0vw;
+    width: 33.2vw;
+    font-size: 0.9vw;
+    font-weight: 500;
+
+}
+
+.light-dark {
+    height: 1.8vw;
+    width: 1.8vw;
+    background-color: bisque;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.light-dark:hover {
+    transform: scale(1.05);
+}
+
+.post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vw 0.8vw;
+    border: 1px solid black;
+    border-radius: 0.7vw;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.post::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #109379;
+    transition: left 0.3s;
+    z-index: -1;
+}
+
+.post:hover::before {
+    left: 0;
+}
+
+.post:hover {
+    border: 1px solid #109379;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+.log-in {
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.log-in:hover{
+    transform: all;
+    color: #109379;
+    scale: 1.05;
+}
+
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #109379;
+    color: aliceblue;
+    padding: 0.6vw 0.9vw;
+    border-radius: 0.7vw;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+.sign-up:hover{
+    background-color: #16b393;
+    scale: 1.05;
+}
+
+@media (max-width:765px){
+  .navbar-container{
+    height: 45px;
+    gap: 40px;
+  }
+
+  .logo-heading{
+    gap: 10px;
+    width: 50vw;
+  }
+
+  .logo{
+    height:30px ;
+    width: 30px;
+  }
+
+  .heading{
+    font-size: 16px;
+  }
+
+  .buttons{
+    display: none;
+  }
+
+  .interaction{
+    width: 50vw;
+    gap: 0px;
+  }
+
+  .light-dark{
+    height: 20px;
+    width: 20px;
+  }
+  .post{
+    font-size: 10px;
+    width: 70px;
+    display: none;
+  }
+  .log-in{
+    font-size: 10px;
+    width: 50px;
+
+  }
+  .sign-up{
+    font-size: 10px;
+    width:60px;
+    height: 25px;
+    border-radius: 25px;
+
+  }
+}

@@ -1,0 +1,101 @@
+.how-cards-container{
+    margin-top: 2.8042vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.8042vw;
+    gap: 1.7417vw;
+}
+.how-card-1{
+    width: 17.833vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5646vw;
+    padding: 0.6167vw 1.0333vw;
+    border-radius: 0.9813vw;
+}
+.how-card-1-img{
+    height: 6.8667vw;
+    width: 6.8667vw;
+    background: url(../assets/how-1.png);
+    background-size: cover;
+}
+.how-card-2{
+    width: 17.833vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5646vw;
+    padding: 0.6167vw 1.0333vw;
+    border-radius: 0.9813vw;
+}
+.how-card-2-img{
+    height: 6.8667vw;
+    width: 6.8667vw;
+    background: url(../assets/how-2.png);
+    background-size: cover;
+}
+.how-card-3{
+    width: 17.833vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5646vw;
+    padding: 0.6167vw 1.0333vw;
+    border-radius: 0.9813vw;
+}
+.how-card-3-img{
+    height: 6.8667vw;
+    width: 6.8667vw;
+    background: url(../assets/how-3.png);
+    background-size: cover;
+}
+.how-card-heading{
+    font-size: 1.1375vw;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+.how-card-desc{
+    font-size: 0.9292vw;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.3458vw;
+    text-align: center;
+}
+
+
+@media (max-width:765px){
+    .how-cards-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 6vw;
+        margin-top: 8vw;
+        margin-bottom: 8vw;
+        padding: 0 4vw;
+    }
+    
+    .how-card-1,
+    .how-card-2,
+    .how-card-3{
+        width: 85vw;
+        padding: 5vw 4vw;
+        border-radius: 3vw;
+        gap: 3vw;
+    }
+    
+    .how-card-1-img,
+    .how-card-2-img,
+    .how-card-3-img{
+        height: 20vw;
+        width: 20vw;
+    }
+    
+    .how-card-heading{
+        font-size: 3.5vw;
+    }
+    
+    .how-card-desc{
+        font-size: 2.5vw;
+        line-height: 4vw;
+    }
+}
